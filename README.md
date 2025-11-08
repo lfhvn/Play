@@ -21,11 +21,35 @@ A modern, full-stack application for the whitewater community - think MountainPr
 - **Multer** - File uploads
 - **Axios** - HTTP client
 
-### Frontend
+### Frontend (Web)
 - **React** + **Vite** - Fast, modern UI framework
 - **React Router** - Client-side routing
 - **Leaflet** - Interactive maps
 - **Context API** - State management
+
+### Mobile (iOS & Android)
+- **React Native** + **Expo** - Cross-platform mobile development
+- **React Navigation** - Native navigation
+- **React Native Maps** - Native map components
+- **AsyncStorage** - Persistent local storage
+
+## 📱 Mobile Apps
+
+Native iOS and Android apps built with React Native! See the [mobile README](./mobile/README.md) for details.
+
+**Quick Start:**
+```bash
+cd mobile
+npm install
+npm start  # Scan QR code with Expo Go app
+```
+
+**Features:**
+- Interactive maps with native performance
+- Browse 100+ rapids with search and filters
+- View detailed rapid information
+- Read and post community discussions
+- Works on both iPhone and Android devices
 
 ## 📋 Prerequisites
 
@@ -182,7 +206,7 @@ Play/
 │   ├── public/uploads/      # Uploaded photos
 │   └── package.json
 │
-├── frontend/
+├── frontend/                # Web app
 │   ├── src/
 │   │   ├── components/      # React components (Map, Header)
 │   │   ├── pages/           # Page components (Home, RapidDetail, Auth)
@@ -192,23 +216,44 @@ Play/
 │   │   └── App.jsx          # Main App component
 │   └── package.json
 │
+├── mobile/                  # iOS & Android app
+│   ├── src/
+│   │   ├── screens/         # App screens (Map, RapidDetail, Auth)
+│   │   ├── navigation/      # Navigation configuration
+│   │   ├── context/         # React context (AuthContext)
+│   │   ├── services/        # API service layer
+│   │   └── components/      # Reusable components
+│   ├── App.js               # Root component
+│   ├── app.json             # Expo configuration
+│   └── package.json
+│
 └── README.md
 ```
 
 ## 🌟 Sample Data
 
-The application comes with 10 famous rapids pre-seeded:
+The application comes with **100 top whitewater rapids** pre-seeded from across North America:
 
-1. **Lochsa Falls** (Lochsa River, Idaho) - Class IV
-2. **Lava Falls** (Colorado River, Grand Canyon) - Class V
-3. **Carnage Corner** (North Fork Payette, Idaho) - Class IV+
-4. **Big Mallard** (Chattooga River, GA/SC) - Class IV
-5. **Pinball** (Arkansas River, Colorado) - Class IV
-6. **Crystal Rapid** (Colorado River, Grand Canyon) - Class IV-V
-7. **Pillow Rock** (Gauley River, West Virginia) - Class V
-8. **Sunshine Falls** (White Salmon River, Washington) - Class IV
-9. **Clavey Falls** (Tuolumne River, California) - Class V
-10. **Jacob's Ladder** (South Fork Payette, Idaho) - Class IV+
+**Famous Rapids Include:**
+- **Lava Falls** (Colorado River, Grand Canyon) - Class V
+- **Crystal Rapid** (Colorado River, Grand Canyon) - Class IV-V
+- **Pillow Rock** (Gauley River, West Virginia) - Class V
+- **Clavey Falls** (Tuolumne River, California) - Class V
+- **Husum Falls** (White Salmon River, Washington) - Class V
+- **Big Drop 2** (Cataract Canyon, Utah) - Class IV-V
+- **Gorilla** (Green River, North Carolina) - Class V+
+- And 93 more rapids spanning Class I through Class V+
+
+**Geographic Coverage:**
+- Grand Canyon (Colorado River)
+- West Virginia (Gauley, New, Cheat Rivers)
+- Idaho (Payette, Middle Fork Salmon, Lochsa)
+- California (Tuolumne, American, Kern Rivers)
+- Colorado, Oregon, Washington
+- Southeast (Chattooga, Ocoee, Green River)
+- Northeast, Montana, Wyoming, Utah
+- Canada (Ottawa River)
+- Plus international destinations (Chile's Futaleufú)
 
 ## 🔐 Security Features
 
