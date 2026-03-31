@@ -1,0 +1,11 @@
+{
+  "author": "lfhvn",
+  "github_id": "lfhvn",
+  "name": "11L LeakyReLU(0.75)² + XSA-8 + BigramHash3072 + Legal TTT + Parallel Muon",
+  "blurb": "Extends SOTA (1.1194 BPB) with LeakyReLU slope 0.75, XSA on 8 layers, BigramHash 3072, 4-epoch TTT with all blocks unfrozen, and LZMA-9 compression.",
+  "date": "2026-03-31T00:00:00Z",
+  "val_loss": 0.0,
+  "val_bpb": 0.0,
+  "bytes_total": 0,
+  "bytes_code": 0
+}
